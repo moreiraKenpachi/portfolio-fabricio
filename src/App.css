@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    a {
+        @apply text-blue-700;
+        @apply no-underline;
+    }
+
+    a:hover {
+        @apply text-blue-400;
+        @apply no-underline;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-handwriting;
+    }
+
+    section {
+        @apply p-[60px_0] overflow-hidden;
+    }
+}
+
+@layer components {
+    body {
+        @apply font-sans;
+        @apply  text-[#272829];
+    }
+
+    /*SOCIAL LINK - start*/    
+    .icon-link {
+        @apply text-[18px] inline-block bg-[#212431] text-[#fff] leading-[1] p-[9px_8.5px] mr-1 rounded-[50%] text-center w-9 h-9 duration-300;
+    }
+    /*SOCIAL LINK - end*/
+    
+    /*IMAGEM-HERO - start*/    
+    .imagem-hero {
+        background-image: url('./assets/img/hero-bg.jpg');
+    }
+    /*IMAGEM-HERO - end*/
+
+    /* *********************** */
+    /* NAVIGATION MENU - start*/      
+    .scrollto.navbar,
+    nav a:hover {
+        @apply text-white;
+    }   
+
+    .icon-home {
+        @apply text-[#6f7180];
+    }
+    
+    .navbar-icon,
+    nav a:hover .icon-home {
+        @apply text-[#149ddd];
+    }   
+    /* NAVIGATION MENU - end*/
+    /* *********************** */   
+
+    /* *********************** */
+    /* OPACIDADE DE BUTÃO NA FOTO - start*/ 
+    .portfolio-wrap:hover::before {
+        @apply top-0 right-0 bottom-0 left-0 opacity-[1];
+    }
+
+    .portfolio-wrap:hover .portfolio-links {
+        @apply opacity-[1] bottom-0;
+    }
+
+    .shuffle-container {
+        max-width: 1020px;
+        margin: 0 auto;
+        padding: 0;        
+    }    
+
+    .shuffle-container .shuffle-item .shuffle-picture {
+        padding: 30px;
+        margin: 20px;
+        background: #eee; 
+        display: block;
+        width: 300px;
+        height: 270px;        
+    }
+
+    .shuffle-container .shuffle-item[data-groups*="web"] .shuffle-picture {
+        background:red;
+      }
+
+    .shuffle-container .shuffle-item[data-groups*="app"] .shuffle-picture {
+        background:green;
+    }  
+    
+    .shuffle-container .shuffle-item[data-groups*="card"] .shuffle-picture {
+        background:blue;
+    }    
+    /* OPACIDADE DE BUTÃO NA FOTO - end*/
+    /* *********************** */ 
+
+    /* *********************** */
+    /* SERVIÇOS ICONS - start*/ 
+    .icon-box:hover .icon {
+        background: #fff;
+    }
+
+    .icon-react {
+        @apply text-[24px] text-[#fff] leading-[0];
+    }
+
+    .icon-box:hover .icon .icon-react {
+        @apply text-[#149ddd];
+    }
+    /* SERVIÇOS ICONS - end*/
+    /* *********************** */ 
+
+    /* *********************** */
+    /* TESTEMUNHAS FOTOS - start*/
+    .paragra-left::after {
+        left: calc(50% - 20px);
+    }
+    
+    /* TESTEMUNHAS FOTOS - end*/
+    /* *********************** */
+
+    /* *********************** */
+    /* CONTACTS - start*/
+    .address:hover i,
+    .email:hover i,
+    .phone:hover i {
+        @apply bg-[#149ddd] text-[#fff];
+    }
+    /* CONTACTS - end*/
+    /* *********************** */
+        
+}
+
+
