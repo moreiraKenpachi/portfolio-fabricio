@@ -88,7 +88,7 @@ export default function Resume() {
 
               <div data-aos="fade-left" data-aos-duration="3000" data-aos-delay="200">
 
-                <h3 className="text-[26px] font-bold mt-5 mb-5 text-[#050d18]">Experiência</h3>
+                <h3 className="text-[26px] font-bold mt-5 mb-5 text-[#050d18]">Experiência - Freelance</h3>
                 <div className="p-[0_0_20px_20px] -mt-[2px] border-l-[2px] border-solid border-[#1f5297] relative
                                 before:content-[''] before:absolute before:w-4 before:h-4 before:rounded-[50px] before:-left-[9px]
                                  before:top-0 before:bg-[#fff] before:border-[2px] before:border-solid before:border-[#1f5297]">
